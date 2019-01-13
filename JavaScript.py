@@ -1,32 +1,50 @@
-import json #import the javascript
+My_Details={
+    "name":"ranjith",
+    "age":21,
+    "address":"L/57 phase-4 sathuvachari",
+    "phone_no":8056868646
+    }
+print(My_Details)
 
-# a Python object (dict):
-x = {
-  "name": "Ranjith",
-  "age": 21,
-  "city": "India"
-}
+my_name=[
+    {
+        "name":"roy","address":"unknown","phone_no":8056868646,
+        "name":"kumar","address":"h43","pn_no":453947889
+    }
+]
+print(my_name)
 
-# convert into JSON:
-y = json.dumps(x)
-
-# the result is a JSON string:
-print(y)
-
-
+My_Details.values()
+try:
+    print(values)
+except:
+    print("hello ur result is wrong")
 
 
-x = {
-  "name": "Ranjith",
-  "age": 31,
-  "married": True,
-  "divorced": False,
-  "children": ("kumar","Roy"),
-  "pets": None,
-  "cars": [
-    {"model": "BMW 230", "mpg": 27.5},
-    {"model": "Ford Edge", "mpg": 24.1}
-  ]
-}
+def my_function(x): #using functions
+ return 5 * x
 
-print(json.dumps(x))
+
+print(my_function(3))
+print(my_function(5))
+print(my_function(9))
+
+#another example
+ranjith=[]
+
+def get_ranjith_kumar():
+    ranjith_kumar=[]    
+    for address in ranjith:
+        ranjith_kumar=ranjith.title()
+        return ranjith_kumar
+
+    def print_ranjith_kumar():
+        ranjith_kumar = []
+        for address in ranjith:
+            ranjith_kumar = ranjith.title()
+            return ranjith_kumar
+
+        def add_ranjith_kumar(phoneno):
+            ranjith_kumar.append(phoneno)
+            ranjith_kumar=get_ranjith_kumar()
+            add_ranjith_kumar(8056868646)
